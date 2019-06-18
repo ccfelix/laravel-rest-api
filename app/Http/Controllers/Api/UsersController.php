@@ -103,5 +103,6 @@ class UsersController extends Controller
         }
 
         $user->delete();
+        return response()->json(['message' => 'Usuario excluido com sucesso'], 200);
     }
 }

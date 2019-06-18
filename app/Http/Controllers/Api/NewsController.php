@@ -100,5 +100,6 @@ class NewsController extends Controller
         }
 
         $new->delete();
+        return response()->json(['message' => 'Noticia excluida com sucesso'], 200);
     }
 }
